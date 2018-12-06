@@ -1,3 +1,10 @@
+.column {
+  margin: auto;
+  width: 90%;
+}
+
+/* HEADER */
+
 header {
   background-color: black;
   color: white;
@@ -6,6 +13,66 @@ header {
 }
 
 section {
+  padding: 1.7rem 0;
   text-align: center;
-  
+  border-bottom: 4px solid black;
+}
+
+section h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* FORM */
+
+form {
+  /*padding: 1rem 0;*/
+  /*border-top: 2px solid black;*/
+}
+
+input {
+  padding: 0.6rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #ececec;
+}
+
+label {
+  margin: 0.5rem 0;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: .25rem 0 1.5rem 0;
+}
+
+legend {
+  padding: 1.20rem 0;
+  /*width: 100%;*/
+  margin: 0.20em 0;
+  border-top: 2px solid black;
+}
+
+.row {
+  margin: 1rem 0;
+}
+
+.newsletterField legend {
+  padding-bottom: 0.50rem;
+}
+
+textarea, button[type="submit"], legend, .contactField input {
+  width: 100%;
+}
+
+input[name="zip"] {
+  width: 50%;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
 }

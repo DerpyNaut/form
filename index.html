@@ -11,61 +11,72 @@
     <header>
       <h1>THE CODE REVIEW</h1>
     </header>
-    <section>
-      <h2>Signup for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your box</p>
-    </section>
-    <form class="" action="index.html" method="post">
-      <fieldset>
-        <legend>Personal information:</legend>
+    <div class="column">
+      <section>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your box</p>
+      </section>
+      <form class="" action="index.html" method="post">
+        <fieldset class="contactField">
+          <legend>Contact information</legend>
 
-        <label for="">Full Name</label>
-        <input type="text" name="" value="">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" value="name">
 
-        <label for="">Email Adress</label>
-        <input type="text" name="" value="">
+          <label for="email">Email Adress</label>
+          <input type="email" name="email" value="email">
 
-        <label for="">Phone Number</label>
-        <input type="text" name="" value="">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" value="phone">
 
-        <label for="">Street address</label>
-        <input type="text" name="" value="">
+          <label for="adress">Street address</label>
+          <input type="text" name="adress" value="adress">
 
-        <label for="">City</label>
-        <input type="text" name="" value="">
+          <label for="city">City</label>
+          <input type="text" name="city" value="city">
 
-        <label for="">State</label>
-        <select class="" name="">
-          <optgroup label="">
-            <option value="">Russia</option>
-            <option value="">Tomato</option>
-            <option value="">Derpy</option>
-          </optgroup>
-        </select>
+          <label for="state">State</label>
+          <select class="" name="state">
+            <optgroup label="State">
+              <option value="russia">Russia</option>
+              <option value="russia">Tomato</option>
+              <option value="russia">Derpy</option>
+            </optgroup>
+          </select>
 
-        <label for="">Zip Code</label>
-        <input type="text" name="" value="">
-      </fieldset>
+          <label for="zip">Zip Code</label>
+          <input type="text" name="zip" value="zip">
+        </fieldset>
 
-      <fieldset>
-        <legend>Newsletter</legend>
+        <fieldset class="newsletterField">
+          <legend>Newsletter</legend>
 
-        <label for="">Select the newsletters you would like to recieve</label>
-        <input type="checkbox" name="news" value="html"> <span>HTML News</span> <br>
-        <input type="checkbox" name="news" value="css"> <span>CSS News</span> <br>
-        <input type="checkbox" name="news" value="js"> <span>Javascript News</span> <br>
+            <label for="">Select the newsletters you would like to recieve</label>
+            <div class="row">
+              <input type="checkbox" name="news" value="html"> <span>HTML News</span> <br>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="news" value="css"> <span>CSS News</span> <br>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="news" value="js"> <span>Javascript News</span> <br>
+            </div>
 
-        <label for="">Newsletter format</label>
-        <input type="radio" name="newsFormat" value="htmlFormat" checked> <span>HTML</span> <br>
-        <input type="radio" name="newsFormat" value="plainFormat"> <span>Plain text</span> <br>
-
-        <label for="">Other topics you'd like to hear about</label>
-        <textarea name="name"></textarea>
-      </fieldset>
-      <button type="submit" name="button">Sign Up</button>
-    </form>
-    <footer>
-      <span>Copyright The Code Review</span>
-    </footer>
+            <label for="newsFormat">Newsletter format</label>
+          <div class="row">
+            <input type="radio" name="newsFormat" value="htmlFormat" checked> <span>HTML</span> <br>
+          </div>
+          <div class="row">
+            <input type="radio" name="newsFormat" value="plainFormat"> <span>Plain text</span> <br>
+          </div>
+          <label for="">Other topics you'd like to hear about</label>
+          <textarea name="comment"></textarea>
+        </fieldset>
+        <button type="submit" name="button">Sign Up</button>
+      </form>
+      <footer>
+        <span>Copyright The Code Review</span>
+      </footer>
+    </div>
   </body>
 </html>
