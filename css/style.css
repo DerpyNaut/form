@@ -1,6 +1,24 @@
+body {
+  font-family: 'Noto Serif', serif;
+}
+
+h1, h2, legend, button[type="submit"] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .column {
   margin: auto;
   width: 90%;
+}
+
+::placeholder {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+footer, ::placeholder {
+  font-style: italic;
 }
 
 /* HEADER */
@@ -19,26 +37,24 @@ section {
 }
 
 section h2 {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* FORM */
 
-form {
-  /*padding: 1rem 0;*/
-  /*border-top: 2px solid black;*/
-}
-
-input {
+input, button[type="submit"], textarea, select {
   padding: 0.6rem 0;
   border: none;
   border-radius: 4px;
   background-color: #ececec;
 }
 
+textarea, button[type="submit"], legend, .contactField input, select {
+  width: 100%;
+}
+
 label {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 fieldset {
@@ -48,8 +64,7 @@ fieldset {
 }
 
 legend {
-  padding: 1.20rem 0;
-  /*width: 100%;*/
+  padding: 1rem 0 0.75rem 0;
   margin: 0.20em 0;
   border-top: 2px solid black;
 }
@@ -62,8 +77,13 @@ legend {
   padding-bottom: 0.50rem;
 }
 
-textarea, button[type="submit"], legend, .contactField input {
-  width: 100%;
+textarea {
+  padding: 1.5rem 0;
+}
+
+button[type="submit"] {
+  padding: 1rem 0;
+  background-color: green;
 }
 
 input[name="zip"] {
@@ -73,6 +93,6 @@ input[name="zip"] {
 /* FOOTER */
 
 footer {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   text-align: center;
 }

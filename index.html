@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Derpy's Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,23 +22,24 @@
           <legend>Contact information</legend>
 
           <label for="name">Full Name</label>
-          <input type="text" name="name" value="name">
+          <input type="text" name="name" placeholder="Required">
 
           <label for="email">Email Adress</label>
-          <input type="email" name="email" value="email">
+          <input type="email" name="email" placeholder="Required">
 
           <label for="phone">Phone Number</label>
-          <input type="text" name="phone" value="phone">
+          <input type="text" name="phone">
 
           <label for="adress">Street address</label>
-          <input type="text" name="adress" value="adress">
+          <input type="text" name="adress">
 
           <label for="city">City</label>
-          <input type="text" name="city" value="city">
+          <input type="text" name="city">
 
           <label for="state">State</label>
-          <select class="" name="state">
+          <select name="state" required>
             <optgroup label="State">
+              <option value="" hidden></option>
               <option value="russia">Russia</option>
               <option value="russia">Tomato</option>
               <option value="russia">Derpy</option>
@@ -45,7 +47,7 @@
           </select>
 
           <label for="zip">Zip Code</label>
-          <input type="text" name="zip" value="zip">
+          <input type="text" name="zip">
         </fieldset>
 
         <fieldset class="newsletterField">
