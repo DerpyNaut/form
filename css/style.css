@@ -1,6 +1,7 @@
 body {
   font-family: 'Noto Serif', serif;
   color: rgb(119, 128, 136);
+  line-height: 1.25rem;
 }
 
 header, h2, legend, button[type="submit"] {
