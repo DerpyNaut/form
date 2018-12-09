@@ -20,6 +20,11 @@ header, h2, legend, button[type="submit"] {
   padding-right: 1rem;
 }
 
+:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 footer, ::placeholder {
   font-style: italic;
 }
@@ -52,6 +57,14 @@ input, button[type="submit"], textarea, select {
   background-color: #ececec;
 }
 
+input:focus, select:focus {
+  outline-color: darkblue;
+}
+
+textarea, input {
+  text-indent: 0.75rem;
+}
+
 textarea, button[type="submit"], legend, .contactField input, select {
   width: 100%;
 }
@@ -81,7 +94,7 @@ legend {
 }
 
 textarea {
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 
 button[type="submit"] {
@@ -99,4 +112,18 @@ input[name="zip"] {
 footer {
   margin: 1.5rem 0;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .column {
+    width: 65%;
+  }
+
+  legend {
+    padding-top: 2rem;
+  }
+
+  header {
+    margin-bottom: 1rem;
+  }
 }
