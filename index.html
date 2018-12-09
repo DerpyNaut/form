@@ -23,12 +23,12 @@
 
           <div class="inputContainer">
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Required">
+            <input required type="text" id="name" placeholder="Required">
           </div>
 
           <div class="inputContainer">
             <label for="email">Email Adress</label>
-            <input type="email" id="email" placeholder="Required">
+            <input required type="email" id="email" placeholder="Required">
           </div>
 
           <div class="inputContainer">
@@ -48,7 +48,7 @@
 
           <div class="inputContainer">
             <label for="state">State</label>
-            <select name="state" required>
+            <select id="state" required>
               <optgroup label="State">
                 <option value="" hidden></option>
                 <option value="russia">Russia</option>
@@ -67,7 +67,7 @@
         <fieldset class="newsletterField">
           <legend>Newsletter</legend>
 
-            <label for="">Select the newsletters you would like to recieve</label>
+            <label>Select the newsletters you would like to recieve</label>
             <div class="row">
               <input type="checkbox" name="news" value="html"> <span>HTML News</span> <br>
             </div>
@@ -78,14 +78,14 @@
               <input type="checkbox" name="news" value="js"> <span>Javascript News</span> <br>
             </div>
 
-            <label for="newsFormat">Newsletter format</label>
+            <label>Newsletter format</label>
           <div class="row">
             <input type="radio" name="newsFormat" value="htmlFormat" checked> <span>HTML</span> <br>
           </div>
           <div class="row">
             <input type="radio" name="newsFormat" value="plainFormat"> <span>Plain text</span> <br>
           </div>
-          <label for="">Other topics you'd like to hear about</label>
+          <label for="comment">Other topics you'd like to hear about</label>
           <textarea name="comment"></textarea>
         </fieldset>
         <button type="submit" name="button">Sign Up</button>
