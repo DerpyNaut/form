@@ -48,12 +48,12 @@
 
           <div class="inputContainer">
             <label for="state">State</label>
-            <select id="state" required>
-              <optgroup label="State">
+            <select id="state">
+              <optgroup label="state">
                 <option value="" hidden></option>
                 <option value="russia">Russia</option>
-                <option value="russia">Tomato</option>
-                <option value="russia">Derpy</option>
+                <option value="tomato">Tomato</option>
+                <option value="derpy">Derpy</option>
               </optgroup>
             </select>
           </div>
@@ -69,13 +69,13 @@
 
             <label>Select the newsletters you would like to recieve</label>
             <div class="row">
-              <input type="checkbox" name="news" value="html"> <span>HTML News</span> <br>
+              <input type="checkbox" name="news" id="newsHtml" value="newsHtml"> <span>HTML News</span> <br>
             </div>
             <div class="row">
-              <input type="checkbox" name="news" value="css"> <span>CSS News</span> <br>
+              <input type="checkbox" name="news" id="newsCss" value="newsCss"> <span>CSS News</span> <br>
             </div>
             <div class="row">
-              <input type="checkbox" name="news" value="js"> <span>Javascript News</span> <br>
+              <input type="checkbox" name="news" id="newsJs" value="newsJs"> <span>Javascript News</span> <br>
             </div>
 
             <label>Newsletter format</label>
@@ -86,7 +86,7 @@
             <input type="radio" name="newsFormat" value="plainFormat"> <span>Plain text</span> <br>
           </div>
           <label for="comment">Other topics you'd like to hear about</label>
-          <textarea name="comment"></textarea>
+          <textarea id="comment"></textarea>
         </fieldset>
         <button type="submit" name="button">Sign Up</button>
       </form>
