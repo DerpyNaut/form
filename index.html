@@ -23,32 +23,32 @@
 
           <div class="inputContainer">
             <label for="name">Full Name</label>
-            <input required type="text" id="name" placeholder="Required">
+            <input required type="text" id="name" name="name" placeholder="Required">
           </div>
 
           <div class="inputContainer">
             <label for="email">Email Adress</label>
-            <input required type="email" id="email" placeholder="Required">
+            <input required type="email" id="email" name="email" placeholder="Required">
           </div>
 
           <div class="inputContainer">
             <label for="phone">Phone Number</label>
-            <input type="text" id="phone">
+            <input type="tel" name="phone" id="phone" placeholder="+*(***)***-**-**">
           </div>
 
           <div class="inputContainer">
             <label for="adress">Street address</label>
-            <input type="text" id="adress">
+            <input type="text" name="adress" id="adress" placeholder="Krasnoyad, 241">
           </div>
 
           <div class="inputContainer">
             <label for="city">City</label>
-            <input type="text" id="city">
+            <input type="text" name="city" id="city" placeholder="Moscow">
           </div>
 
           <div class="inputContainer">
             <label for="state">State</label>
-            <select id="state">
+            <select name="state" id="state">
               <optgroup label="state">
                 <option label=" " hidden></option>
                 <option value="russia">Russia</option>
@@ -60,7 +60,7 @@
 
           <div class="inputContainer">
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip">
+            <input type="text" name="zip" id="zip" placeholder="***">
           </div>
         </fieldset>
 
@@ -69,24 +69,24 @@
 
             <label>Select the newsletters you would like to recieve</label>
             <div class="row">
-              <input type="checkbox" name="news" id="newsHtml" value="newsHtml"> <span>HTML News</span> <br>
+              <input type="checkbox" name="news" id="newsHtml" value="newsHtml"> <label for="newsHtml">HTML News</label> <br>
             </div>
             <div class="row">
-              <input type="checkbox" name="news" id="newsCss" value="newsCss"> <span>CSS News</span> <br>
+              <input type="checkbox" name="news" id="newsCss" value="newsCss"> <label for="newsCss">CSS News</label> <br>
             </div>
             <div class="row">
-              <input type="checkbox" name="news" id="newsJs" value="newsJs"> <span>Javascript News</span> <br>
+              <input type="checkbox" name="news" id="newsJs" value="newsJs"> <label for="newsJs">Javascript News</label> <br>
             </div>
 
             <label>Newsletter format</label>
           <div class="row">
-            <input type="radio" id="htmlFormat" name="newsFormat" value="htmlFormat" checked> <span>HTML</span> <br>
+            <input type="radio" id="htmlFormat" name="newsFormat" value="htmlFormat" checked> <label for="htmlFormat">HTML</label> <br>
           </div>
           <div class="row">
-            <input type="radio" id="plainFormat" name="newsFormat" value="plainFormat"> <span>Plain text</span> <br>
+            <input type="radio" id="plainFormat" name="newsFormat" value="plainFormat"> <label for="plainFormat">Plain text</label> <br>
           </div>
           <label for="comment">Other topics you'd like to hear about</label>
-          <textarea id="comment"></textarea>
+          <textarea name="comment" id="comment"></textarea>
         </fieldset>
         <button type="submit" name="button">Sign Up</button>
       </form>

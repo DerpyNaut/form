@@ -39,6 +39,7 @@ header {
 }
 
 section {
+  background: linear-gradient(to right, #ffffff 0%,#dff4ff 34%,#dff4ff 69%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   padding: 1.7rem 0;
   text-align: center;
   border-bottom: 4px solid black;
